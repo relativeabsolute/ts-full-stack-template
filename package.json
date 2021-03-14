@@ -1,0 +1,26 @@
+{
+    "name": "ts-full-stack-template",
+    "version": "1.0.0",
+    "description": "Full stack template written in typescript",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/relativeabsolute/ts-full-stack-template.git"
+    },
+    "keywords": [
+        "full-stack",
+        "template",
+        "angular",
+        "express",
+        "typescript"
+    ],
+    "author": "Johan Burke",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/relativeabsolute/ts-full-stack-template/issues"
+    },
+    "homepage": "https://github.com/relativeabsolute/ts-full-stack-template#readme"
+}
