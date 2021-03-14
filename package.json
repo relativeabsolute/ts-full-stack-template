@@ -4,11 +4,15 @@
     "description": "Full stack template written in typescript",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup-deps": "concurrently \"cd ./frontend && npm i\" \"cd ./api && npm i\"",
+        "build": "cd ./api && npm run build",
+        "build-local": "cd ./api && npm run build-local",
+        "start": "cd ./api && npm run start"
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/relativeabsolute/ts-full-stack-template.git"
+        "url": "git+ssh://github.com/relativeabsolute/ts-full-stack-template.git"
     },
     "keywords": [
         "full-stack",
@@ -22,5 +26,8 @@
     "bugs": {
         "url": "https://github.com/relativeabsolute/ts-full-stack-template/issues"
     },
-    "homepage": "https://github.com/relativeabsolute/ts-full-stack-template#readme"
+    "homepage": "https://github.com/relativeabsolute/ts-full-stack-template#readme",
+    "dependencies": {
+        "concurrently": "^6.0.0"
+    }
 }

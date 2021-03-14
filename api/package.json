@@ -1,0 +1,37 @@
+{
+    "name": "ts-full-stack-api",
+    "version": "1.0.0",
+    "description": "Express api for full stack template",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run run-server",
+        "start-local": "npm run build:local && npm run run-server",
+        "build": "npm run build-server",
+        "build-local": "npm run clean && concurrently \"npm run build-static-files:local\" \"npm run build-server\" && npm run move-static-files",
+        "build-server": "tsc",
+        "build-static-files:local": "cd ../frontend && npm run build && cd ../api",
+        "move-static-files": "mv ../frontend/dist ./dist/public",
+        "run-server": "node ./dist/index.js",
+        "clean": "rimraf ./dist"
+    },
+    "keywords": [
+        "express",
+        "typescript"
+    ],
+    "author": "Johan Burke",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "inversify": "^5.0.5",
+        "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.11",
+        "@types/node": "^14.14.34",
+        "rimraf": "^3.0.2",
+        "tslint": "^6.1.3",
+        "typescript": "^4.2.3"
+    }
+}

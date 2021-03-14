@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "importHelpers": true,
+        "target": "es6",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "lib": ["es2018", "dom"],
+        "typeRoots": ["node_modules/@types"],
+        "types": []
+    },
+    "files": ["src/index.ts"]
+}
